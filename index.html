@@ -4,10 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Unload Reasonable Expectations</title>
-    <style></style>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      header, footer {
+        flex: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+      }
+      middle {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+      }
+      lect, center, right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header>
+      <p>Header</p>
+    </header>
+    <div id="middle">
+      <div id="left">
+      </div>
+      <div id="center">
+      </div>
+      <div id="right>
+      </div>
+    </div>
+    <footer>
+      <p>Footer</p>
+    </footer>
     <script>
     </script>
   </body>
