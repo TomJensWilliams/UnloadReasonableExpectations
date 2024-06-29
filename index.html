@@ -43,21 +43,21 @@
   </head>
   <body>
     <header>
-      <label for="personInput">
-      <input type="number" id="personInput" name="personInpuut" />
+      <label for="cartonInput">
+      <input type="number" id="cartonInput" name="cartonInput" />
         </label>
     </header>
     <div id="middle">
       <div id="left">
-        <h2>4 People (2 In &anp; 2 Out</h2>
+        <h2>4 People (2 In &#38; 2 Out</h2>
         <p id="fourPersonElement"></p>
       </div>
       <div id="center">
-        <h2>5 People (2 In &anp; 3 Out</h2>
+        <h2>5 People (2 In &#38; 3 Out</h2>
         <p id="fourPersonElement"></p>
       </div>
       <div id="right>
-        <h2>6 People (2 In &anp; 4 Out</h2>
+        <h2>6 People (2 In &#38; 4 Out</h2>
         <p id="fourPersonElement"></p>
         </div>
     </div>
@@ -65,12 +65,19 @@
       <p>Footer</p>
     </footer>
     <script>
-      const personInput = document.getElementById("personInput");
+      const cartonInput = document.getElementById("cartonInput");
       const fourPersonElement = document.getElementzById("fourPersonElement");
       const fivePersonElement = document.getElementzById("fivePersonElement");
       const sixPersonElement = document.getElementzById("sixPersonElement");
 
-      personInput.addEventListener("keyUp", console.log("This worked!))
+      personInput.addEventListener("keyUp", () => {
+        let cartons = cartonInput.value;
+
+
+        fourPersonElement.innerHTML = "";
+        fivePersonElement.innerHTML = "";
+        sixPersonElement.innerHTML = "";
+      });
     </script>
   </body>
 </html>
