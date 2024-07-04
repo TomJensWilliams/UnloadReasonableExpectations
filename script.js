@@ -1,12 +1,12 @@
 console.log('Hello World!');
 
 const cartonInput = document.getElementById("cartonInput");
-const fourPersonLow = document.getElementzById("fourPersonLow");
-const fourPersonHigh = document.getElementzById("fourPersonHigh");
-const fivePersonLow = document.getElementzById("fivePersonLow");
-const fivePersonHigh = document.getElementzById("fivePersonHigh");
-const sixPersonLow = document.getElementzById("sixPersonLow");
-const sixPersonHigh = document.getElementzById("sixPersonHigh");
+const fourPersonLow = document.getElementById("fourPersonLow");
+const fourPersonHigh = document.getElementById("fourPersonHigh");
+const fivePersonLow = document.getElementById("fivePersonLow");
+const fivePersonHigh = document.getElementById("fivePersonHigh");
+const sixPersonLow = document.getElementById("sixPersonLow");
+const sixPersonHigh = document.getElementById("sixPersonHigh");
 
 cartonInput.addEventListener("keyUp", () => {
   let cartons = cartonInput.value;
