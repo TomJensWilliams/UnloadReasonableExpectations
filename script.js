@@ -10,6 +10,7 @@ const sixPersonHigh = document.getElementById("sixPersonHigh");
 
 cartonInput.addEventListener("keyUp", () => {
   let cartons = cartonInput.value;
+  let valuesArray = [];
   fourPersonLow.innerHTML = "1";
   fourPersonHigh.innerHTML = "2";
   fivePersonLow.innerHTML = "3";
