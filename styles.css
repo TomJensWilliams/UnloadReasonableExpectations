@@ -1,15 +1,30 @@
 body {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: red;
 }
 
 #top {
-
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: blue;
 }
 
 #bottom {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: green;
 
 }
