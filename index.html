@@ -3,51 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Unload Reasonable Expectations</title>
-    <style>
-      body {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-      }
-      header, footer {
-        height: auto;
-        width: 100%;
-        flex: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: blue;
-      }
-      #middle {
-        height: 80%;
-        width: 100%;
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        background-color: red;
-      }
-      #left, #center, #right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
   </head>
   <body>
-    <header>
-      <label for="cartonInput">
-      <input type="number" id="cartonInput" name="cartonInput" />
-        </label>
-    </header>
-    <div id="middle">
+    <div id="top">
+      <label for="cartonInput">How many cartons are in this truck?</label>
+      <input type="number" id="cartonInput" name="cartonInput" min="0" max="3000">
+    </div>
+    <div id="bottom">
       <div id="left">
         <h2>4 People (2 In &#38; 2 Out</h2>
         <p id="fourPersonElement"></p>
