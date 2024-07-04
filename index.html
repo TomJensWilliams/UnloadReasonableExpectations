@@ -13,35 +13,15 @@
     </div>
     <div id="bottom">
       <div id="left">
-        <h2>4 People (2 In &#38; 2 Out</h2>
-        <p id="fourPersonElement"></p>
+        <p>With 4 people this truck should be completed in <span id="fourPersonLow"></span>span> to <span id="fourPersonHigh"></span> minutes.</p>
       </div>
       <div id="center">
-        <h2>5 People (2 In &#38; 3 Out</h2>
-        <p id="fourPersonElement"></p>
+        <p>With 5 people this truck should be completed in <span id="fivePersonLow"></span>span> to <span id="fivePersonHigh"></span> minutes.</p>
       </div>
-      <div id="right>
-        <h2>6 People (2 In &#38; 4 Out</h2>
-        <p id="fourPersonElement"></p>
-        </div>
+      <div id="right">
+        <p>With 6 people this truck should be completed in <span id="sixPersonLow"></span>span> to <span id="sixPersonHigh"></span> minutes.</p>
+      </div>
     </div>
-    <footer>
-      <p>Footer</p>
-    </footer>
-    <script>
-      const cartonInput = document.getElementById("cartonInput");
-      const fourPersonElement = document.getElementzById("fourPersonElement");
-      const fivePersonElement = document.getElementzById("fivePersonElement");
-      const sixPersonElement = document.getElementzById("sixPersonElement");
-
-      personInput.addEventListener("keyUp", () => {
-        let cartons = cartonInput.value;
-
-
-        fourPersonElement.innerHTML = "";
-        fivePersonElement.innerHTML = "";
-        sixPersonElement.innerHTML = "";
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
