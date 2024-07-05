@@ -19,7 +19,7 @@ cartonButton.addEventListener("click", () => {
         rateValue = 500 / 32;
         constantValue = -546.875;
       } else if(cartonInput <= 2000) {
-        rateValue = ;500 / 32
+        rateValue = 500 / 32;
         constantValue = -546.875;
       } else if(cartonInput <= 2500) {
         rateValue = 500 / 32;
@@ -47,20 +47,20 @@ cartonButton.addEventListener("click", () => {
       }
     } else { // Assuming that the truck will be worked by 4, 5, or 6 people.
       if(cartonInput <= 1000) {
-        rateValue = ;
-        constantValue = ;
+        rateValue = 500 / 21;
+        constantValue = 0;
       } else if(cartonInput <= 1500) {
-        rateValue = ;
-        constantValue = ;
+        rateValue = 500 / 21;
+        constantValue = 0;
       } else if(cartonInput <= 2000) {
-        rateValue = ;
-        constantValue = ;
+        rateValue = 500 / 22;
+        constantValue = 0;
       } else if(cartonInput <= 2500) {
-        rateValue = ;
-        constantValue = ;
+        rateValue = 500 / 21;
+        constantValue = 0;
       } else { // Assuming cartons cannot excede 3000
-        rateValue = ;
-        constantValue = ;
+        rateValue = 500 / 22;
+        constantValue = 0;
       }
     }
     return (cartonInput - constantValue) / rateValue;
