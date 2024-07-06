@@ -6,28 +6,26 @@ const fourPersonValue = document.getElementById("fourPersonValue");
 const fivePersonValue = document.getElementById("fivePersonValue");
 const sixPersonValue = document.getElementById("sixPersonValue");
 
-cartonButton.addEventListener("click", () => {
-  console.log("Another Hello!!");
-  let currentCartons = cartonInput.value;
-  let valueFunction = function (peopleInput, cartonInput) {
-    let rateValue, constantValue, calculatedMinutes, remainder, quotient;
-    if(peopleInput === 4) {
-      if(cartonInput <= 1000) {
-        rateValue = 500 / 31;
-        constantValue = -18500 / 31;
-      } else if(cartonInput <= 1500) {
-        rateValue = 500 / 32;
-        constantValue = -546.875;
-      } else if(cartonInput <= 2000) {
-        rateValue = 500 / 32;
-        constantValue = -546.875;
-      } else if(cartonInput <= 2500) {
-        rateValue = 500 / 32;
-        constantValue = -546.875;
-      } else { // Assuming cartons cannot excede 3000
-        rateValue = 500 / 32;
-        constantValue = -546.875;
-      }
+function valueFunction(peopleInput, cartonInput) {
+  let rateValue, constantValue, calculatedMinutes, remainder, quotient;
+  if(peopleInput === 4) {
+    if(cartonInput <= 1000) {
+      rateValue = 500 / 31;
+      constantValue = -18500 / 31;
+    } else if(cartonInput <= 1500) {
+      rateValue = 500 / 32;
+      constantValue = -546.875;
+    } else if(cartonInput <= 2000) {
+      rateValue = 500 / 32;
+      constantValue = -546.875;
+    } else if(cartonInput <= 2500) {
+      rateValue = 500 / 32;
+      constantValue = -546.875;
+    } else { // Assuming cartons cannot excede 3000
+      rateValue = 500 / 32;
+      constantValue = -546.875;
+    }
+//
     } else if(peopleInput === 5) {
       if(cartonInput <= 1000) {
         rateValue = 500 / 25;
@@ -63,6 +61,11 @@ cartonButton.addEventListener("click", () => {
         constantValue = -12500 / 21;
       }
     }
+
+cartonButton.addEventListener("click", () => {
+  console.log("Another Hello!!");
+  let currentCartons = cartonInput.value;
+  
     calculatedMinutes = (cartonInput - constantValue) / rateValue;
     remainder calculatedMinutes % 60;
     quotient = (calculatedMinutes - remainder) / 60;
