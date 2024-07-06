@@ -48,24 +48,30 @@ cartonButton.addEventListener("click", () => {
     } else { // Assuming that the truck will be worked by 4, 5, or 6 people.
       if(cartonInput <= 1000) {
         rateValue = 500 / 21;
-        constantValue = 0;
+        constantValue = -12000 / 21;
       } else if(cartonInput <= 1500) {
         rateValue = 500 / 21;
-        constantValue = 0;
+        constantValue = -12000 / 21;
       } else if(cartonInput <= 2000) {
         rateValue = 500 / 22;
-        constantValue = 0;
+        constantValue = -10500 / 22;
       } else if(cartonInput <= 2500) {
         rateValue = 500 / 21;
-        constantValue = 0;
+        constantValue = -12500 / 21;
       } else { // Assuming cartons cannot excede 3000
         rateValue = 500 / 22;
-        constantValue = 0;
+        constantValue = -12500 / 21;
       }
     }
     return (cartonInput - constantValue) / rateValue;
   }
-  fourPersonValue.innerHTML = valueFunction(4, currentCartons);
-  fivePersonValue.innerHTML = valueFunction(5, currentCartons);
-  sixPersonValue.innerHTML = valueFunction(6, currentCartons);
+  let stringFunction = function(inputValue){
+    let remainder inputValue % 60;
+    let quotient = (inputValue - remainder) / 60;
+    return `${quotient} hours and ${remainder} minutes`;
+  }
+    
+  fourPersonValue.innerHTML = stringFunction(valueFunction(4, currentCartons));
+  fivePersonValue.innerHTML = stringFunction(valueFunction(5, currentCartons));
+  sixPersonValue.innerHTML = stringFunction(valueFunction(6, currentCartons));
 });
