@@ -63,11 +63,11 @@ function valueFunction(peopleInput, cartonInput) {
   calculatedMinutes = (cartonInput - constantValue) / rateValue;
   remainder = calculatedMinutes % 60;
   quotient = (calculatedMinutes - remainder) / 60;
-  return `${quotient} hours and ${remainder} minutes`;
+  return `${Math.round(quotient) >= 1 ? `${Math.round(quotient)} hours and `: ``}${Math.round(remainder)} minutes`;
 }
 
 cartonButton.addEventListener("click", () => {
-  console.log("Another Hello!!");
+  console.log("Goodbye World!");
   let currentCartons = cartonInput.value;
   fourPersonValue.innerHTML = valueFunction(4, currentCartons);
   fivePersonValue.innerHTML = valueFunction(5, currentCartons);
