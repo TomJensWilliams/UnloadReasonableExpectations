@@ -7,7 +7,7 @@ const fivePersonValue = document.getElementById("fivePersonValue");
 const sixPersonValue = document.getElementById("sixPersonValue");
 
 cartonButton.addEventListener("click", () => {
-  console.log("Hello Again!");
+  console.log("Another Hello!!");
   let currentCartons = cartonInput.value;
   let valueFunction = function (peopleInput, cartonInput) {
     let rateValue, constantValue;
@@ -63,15 +63,13 @@ cartonButton.addEventListener("click", () => {
         constantValue = -12500 / 21;
       }
     }
-    return (cartonInput - constantValue) / rateValue;
-  }
-  let stringFunction = function(inputValue){
-    let remainder inputValue % 60;
-    let quotient = (inputValue - remainder) / 60;
+    let calculatedMinutes = (cartonInput - constantValue) / rateValue;
+    let remainder calculatedMinutes % 60;
+    let quotient = (calculatedMinutes - remainder) / 60;
     return `${quotient} hours and ${remainder} minutes`;
   }
     
-  fourPersonValue.innerHTML = stringFunction(valueFunction(4, currentCartons));
-  fivePersonValue.innerHTML = stringFunction(valueFunction(5, currentCartons));
-  sixPersonValue.innerHTML = stringFunction(valueFunction(6, currentCartons));
+  fourPersonValue.innerHTML = valueFunction(4, currentCartons);
+  fivePersonValue.innerHTML = valueFunction(5, currentCartons);
+  sixPersonValue.innerHTML = valueFunction(6, currentCartons);
 });
