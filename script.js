@@ -10,7 +10,7 @@ cartonButton.addEventListener("click", () => {
   console.log("Another Hello!!");
   let currentCartons = cartonInput.value;
   let valueFunction = function (peopleInput, cartonInput) {
-    let rateValue, constantValue;
+    let rateValue, constantValue, calculatedMinutes, remainder, quotient;
     if(peopleInput === 4) {
       if(cartonInput <= 1000) {
         rateValue = 500 / 31;
@@ -63,9 +63,9 @@ cartonButton.addEventListener("click", () => {
         constantValue = -12500 / 21;
       }
     }
-    let calculatedMinutes = (cartonInput - constantValue) / rateValue;
-    let remainder calculatedMinutes % 60;
-    let quotient = (calculatedMinutes - remainder) / 60;
+    calculatedMinutes = (cartonInput - constantValue) / rateValue;
+    remainder calculatedMinutes % 60;
+    quotient = (calculatedMinutes - remainder) / 60;
     return `${quotient} hours and ${remainder} minutes`;
   }
     
