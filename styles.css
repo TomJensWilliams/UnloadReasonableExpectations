@@ -6,7 +6,7 @@ body {
   width: 95vw;
   height: 95vh;
   border: 2px solid black;
-  /* background-color: red; */
+  background-color: silver;
 }
 
 #top {
@@ -47,9 +47,22 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: auto;
   border: 2px solid black;
   /* background-color: green; */
+}
+
+#top,
+#middle,
+#bottom {
+  background-color: Gainsboro;
+}
+
+#left,
+#center,
+#right {
+  border: 2px solid black;
+  background-color: WhiteSmoke;
 }
