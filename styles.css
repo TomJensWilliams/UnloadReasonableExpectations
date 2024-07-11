@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: space-around;
   width: 100%;
   height: auto;
   border: 2px solid black;
@@ -23,7 +23,7 @@ body {
 #hdSquare {
   background-color: orange;
   margin-right: 20px;
-  width: auto;
+  height: 200px;
   aspect-ratio: 1 / 1;
 }
 
