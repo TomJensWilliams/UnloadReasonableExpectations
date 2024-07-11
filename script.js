@@ -56,7 +56,7 @@ function valueFunction(peopleInput, cartonInput) {
       rateValue = 500 / 21;
       constantValue = -12500 / 21;
     } else { // Assuming cartons cannot excede 3000
-      rateValue = 500 / 22;
+      rateValue = 500 / 21;
       constantValue = -12500 / 21;
     }
   }
