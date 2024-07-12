@@ -21,6 +21,10 @@ body {
 }
 
 #hdSquare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: orange;
   margin-right: 20px;
   height: 200px;
@@ -28,6 +32,7 @@ body {
 }
 
 #hdSquare > p {
+  transform: rotate(-45deg);
   color: white;
   font-weight: 800;
 }
