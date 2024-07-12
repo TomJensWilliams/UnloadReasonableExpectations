@@ -48,8 +48,8 @@ body {
   justify-content: center;
   width: 100%;
   height: auto;
+  padding: 20px 0 20px 0;
   border: 2px solid black;
-  /* background-color: blue; */
 }
 
 #bottom {
@@ -72,6 +72,8 @@ body {
 #left,
 #center,
 #right {
+  padding: 20px 20px 20px 20px;
+  margin: 20px 0 20px 0;
   border: 2px solid black;
   background-color: WhiteSmoke;
 }
