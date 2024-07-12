@@ -33,6 +33,7 @@ body {
 }
 
 #hdSquare > p {
+  margin-bottom: 10px;
   transform: rotate(-45deg);
   color: white;
   font-weight: 800;
