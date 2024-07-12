@@ -36,6 +36,7 @@ body {
 
 #hdSquare > p {
   /* ADD TEXT SHADOWING */
+  text-shadow: 0 0 2px #DDD;
   margin-bottom: -10px;
   transform: rotate(-45deg);
   color: white;
