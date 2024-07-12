@@ -35,6 +35,8 @@ body {
   transform: rotate(-45deg);
   color: white;
   font-weight: 800;
+  font-size: 50px;
+  font-family: Impact;
 }
 
 #middle {
