@@ -19,12 +19,15 @@ body {
   border: 2px solid black;
 }
 
+#top > * {
+  flex: 1;
+}
+
 #hdSquare {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   background-color: orange;
   margin-right: 20px;
   height: 200px;
