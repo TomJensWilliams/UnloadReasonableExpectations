@@ -17,7 +17,6 @@ body {
   width: 100%;
   height: auto;
   border: 2px solid black;
-  /* background-color: blue; */
 }
 
 #hdSquare {
@@ -33,7 +32,8 @@ body {
 }
 
 #hdSquare > p {
-  margin-bottom: 10px;
+  /* ADD TEXT SHADOWING */
+  margin-bottom: -10px;
   transform: rotate(-45deg);
   color: white;
   font-weight: 800;
