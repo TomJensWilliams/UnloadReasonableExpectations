@@ -23,6 +23,13 @@ body {
   flex: 1;
 }
 
+#hdSquareHolder {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+}
+
 #hdSquare {
   display: flex;
   flex-direction: column;
