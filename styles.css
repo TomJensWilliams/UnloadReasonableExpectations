@@ -45,8 +45,12 @@ body {
   text-shadow: 0 0 2px #DDD;
   transform: rotate(-45deg);
   color: white;
+  /*
   margin-top: 0px;
   padding-top: 3px;
+  */
+  margin-top: auto;
+  margin-bottom: auto;
   font-weight: 800;
   font-size: 50px;
   font-family: Impact;
