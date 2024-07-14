@@ -57,6 +57,14 @@ body {
   font-size: 75px;
 }
 
+#the {
+  margin-right: 25px;
+}
+
+#depot {
+  margin-left 25px;
+}
+
 #middle {
   display: flex;
   flex-direction: row;
