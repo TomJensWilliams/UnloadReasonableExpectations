@@ -41,19 +41,20 @@ body {
   aspect-ratio: 1 / 1;
 }
 
-#hdSquare > p {
+#hdSquare > span {
   text-shadow: 0 0 2px #DDD;
   transform: rotate(-45deg);
   color: white;
-  /*
-  margin-top: 0px;
-  padding-top: 3px;
-  */
-  margin-top: auto;
-  margin-bottom: auto;
   font-weight: 800;
-  font-size: 50px;
   font-family: Impact;
+}
+
+.smallerText {
+  font-size: 50px;
+}
+
+.largerText {
+  font-size: 75px;
 }
 
 #middle {
